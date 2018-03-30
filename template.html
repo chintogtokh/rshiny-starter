@@ -3,14 +3,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- RShiny Styles -->
         <title>RShiny Starter</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="css/css.css" rel="stylesheet">
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="favicon.ico?v=1.0">
         {{ headContent() }}
         <script src="js/js.js"></script>
     </head>
@@ -40,10 +39,6 @@
                         </div>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="" aria-label="Search">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </nav>
         <main role="main">
@@ -51,7 +46,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-7 hello-r">
-                            <h1 class="display-3">Hello, R!</h1>
+                            <h1 class="display-3">Hello, RShiny!</h1>
                             <p>{{greeting}}</p>
                             <p>
                                 <a class="btn btn-primary btn-lg" href="https://github.com/chintogtokh/rshiny-starter" role="button">Fork on <i class="fab fa-github"></i></a>
@@ -68,11 +63,14 @@
                 <div class="row">
                     <div class="col-md-4">
                         <p>
+                            <!-- Inputs using braces -->
                             {{xcol}}
-                            <br>
                             {{ycol}}
-                            <br>
-                            {{clusters}}
+                            <!-- Setting an input without using braces -->
+                            <div class="form-group shiny-input-container">
+                              <label for="clusters">Clusters</label>
+                              <input id="clusters" type="number" class="form-control shiny-bound-input" value="3" min="1" max="9" autocomplete="off">
+                            </div>
                         </p>
                     </div>
                     <div class="col-md-8">
