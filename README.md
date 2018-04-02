@@ -14,7 +14,7 @@ install.packages(c('shiny','leaflet'), repos='http://cran.rstudio.com/')
 
 This app should work out of the box when running it from RStudio.
 
-![Screenshot](https://raw.githubusercontent.com/chintogtokh/Shiny-starter/master/www/images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/chintogtokh/rshiny-starter/master/www/images/screenshot.png)
 
 ### Structure
 The app is structured as follows:
