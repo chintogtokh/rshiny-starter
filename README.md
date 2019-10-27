@@ -1,8 +1,8 @@
 # Shiny Starter
 
-This is a Shiny template based off of [Shiny's KMeans clustering example](https://shiny.rstudio.com/gallery/kmeans-example.html) and [Bootstrap's Jumbotron example](https://getbootstrap.com/docs/4.0/examples/jumbotron/). It includes a Leaflet map and the K-means clustering interactive graph.
+This is a Shiny template based off of [Shiny's KMeans clustering example](https://shiny.rstudio.com/gallery/kmeans-example.html) and [Bootstrap's Jumbotron example](https://getbootstrap.com/docs/4.0/examples/jumbotron/). As examples, it includes a Leaflet map and a K-means clustering interactive graph.
 
-Essentially, it's a starter app to create Shiny apps using plain HTML instead of their templating system.
+Essentially, it's a starter app to more easily create Shiny apps using plain HTML instead of their templating system.
 
 ## Getting started
 
